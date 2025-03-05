@@ -32,12 +32,32 @@ aws ec2 create-subnet --vpc-id vpc-12345678 --cidr-block 10.16.64.0/20 --availab
 ...
 ```
 
+For fun, here is a list of numbers, counting by 16.
+```
 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 255
 10, 20, 30, 40, 50, 60, 70,  80,  90,  a0,  b0,  c0,  d0,  e0,  f0,  ff
+```
 
+```JavaScript
+parseInt("10", 16)
+parseInt("20", 16)
 parseInt("ff", 16)
+```
 
-Then create the route table
+Then create the route table for the web subnet
 
-```bash
+You will need to add routes to open the subnet to the whole internet.
+
+IPv4
+
+0.0.0.0/0
+
+IPv6
+
+::/0
+
+
+
+
+
 
