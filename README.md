@@ -1,5 +1,8 @@
 # AWS Practice with Cantrill course
 
-## How to on VCP subnet
+* [Setup CLI](./cli-login-to-account.md)
+
+## Demo lessons
 
 * [VPC subnet](./VPC-subnet.md)
+* [NAT Gateway](./NAT-gateway.md)
