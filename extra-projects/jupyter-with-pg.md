@@ -1,11 +1,10 @@
 
-
-Created...
+Goal: create a Jupyter notebook server that is available from the public web and can connect to a PostgreSQL database (on EC2) in a private subnet.
 
 * VPC
 * Two subnets - private and public
 * Internet Gateway
-  * attach it to VPC 
+  * attach it to VPC
 * Route Table
   * name: public-jupyter-pg-rt
   * add route to Internet Gateway
