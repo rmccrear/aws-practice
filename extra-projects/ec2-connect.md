@@ -2,16 +2,19 @@
 
 video: [Connect to EC2 with Session Manager and EC2 Instance Connect](https://www.youtube.com/watch?v=3tKB947rT5Q)
 
-## methods
+## Methods
 
 * EC2 Instance Connect
 * Session Manager
+* Bastion host or jump box
+* Directly connecting via SSH will not work with an instance on a private network
+* Alternative: Create am AMI that does not require modification. Use automation to destroy and rebuild instances instead of accessing them manually.
 
 ### EC2 Instance Connect
 
 Public: Open by default
 
-Private: Must setup endpoints in your private subnet.
+Private: Must setup endpoints in your private subnet
 
 #### Steps for setting up the instance connect method
 
